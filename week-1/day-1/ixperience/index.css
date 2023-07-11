@@ -1,0 +1,73 @@
+.black-background {
+    background: black; 
+    width: 50%;
+    float: left;
+
+}
+
+
+button {
+    position: relative;
+    left: 40%;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+
+.grey-background-parent {
+    background: rgb(165, 164, 164);
+    width: 60%;
+
+}
+
+.gb-child {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+.font {
+    font: sans-serif white;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.black-background, .white-background-right {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.white-background-right {
+    display: inline-block;
+    background: white;
+    margin-left: 60%;
+}
+
+.blue-background {
+    display: inline-block;
+    background: rgb(57, 138, 213);
+    color: white;
+    margin-left: 60%;
+}
+
+.dark-grey-background {
+    display: inline-block;
+    background: black;
+    color: white;
+    margin-left: 60%;
+}
+
+.last-black-background {
+    display: inline-block;
+    background: black;
+    color: white;
+    margin-left: 60%;
+}
+
+
+

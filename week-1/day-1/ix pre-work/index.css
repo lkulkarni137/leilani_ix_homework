@@ -1,0 +1,87 @@
+
+.white {
+    color: white;
+}
+
+.black {
+    color: black;
+}
+
+.font {
+    font-family: Georgia, Tahoma, sans-serif;
+}
+
+/* how do i get this back part to show??? go back to the lectures */
+body > section {
+    background: white;
+    height: 300%;
+    width: 90%;
+    position: relative;
+    left: 5%;
+    border-radius: 15%;
+    text-align: center;
+}
+
+#background {
+    background-color: paleturquoise;
+}
+
+
+#header {
+    position: relative;
+    text-align: center;
+    left: 33%;
+    border: 2px solid rgb(114, 5, 246);
+    width: 30%;
+    height: 80%;
+    padding: 2%;
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 150%;
+}
+
+
+img {
+    position: relative;
+    width: 30%;
+}
+
+h3 {
+    text-align: center;
+    font-size: 125%;
+}
+
+#body-text {
+    background:rgb(114, 5, 246);
+    position: relative;
+    left: 7.7%;
+    width: 80%;
+    text-align: center;
+    height: 100%;
+    padding: 2%
+}
+#p1 {
+    text-align: left;
+    font-size: 100%
+}
+
+#p2 {
+    font-size: 100%
+}
+
+#p3 {
+    text-align: center
+}
+
+#form-elements {
+    text-align: center;
+}
+
+
+
+/* figure out how to center-justify like everything AND AND
+how to correctly link an image in there go back to the html tutorial 
+ALSO figure out how to change the boxes the text itself is confined to */
