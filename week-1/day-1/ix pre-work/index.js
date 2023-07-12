@@ -11,3 +11,7 @@ function check() {
     var mycheck = document.getElementbyId("check");
     mycheck.checked = true;
 }
+
+
+
+
