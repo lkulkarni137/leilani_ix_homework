@@ -101,7 +101,6 @@ function rev(num) {
 
 // Task 13
 function capitalize(str) {
-    // do you need to create a new variable or does it modify the original
     for (i = 0; i < str.length; i++) {
         i.toUpperCase()
     }
@@ -154,7 +153,7 @@ function higherval(array, val) {
     newArr = []
     for (i = 0; i < array.length; i++) {
         if (i > 10) {
-            newArr += i   // figure this out later
+            newArr += i
         }
     }
     console.log(newArr)
