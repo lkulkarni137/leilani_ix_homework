@@ -158,4 +158,3 @@ function higherval(array, val) {
     }
     console.log(newArr)
 }
-
