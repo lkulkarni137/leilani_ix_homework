@@ -12,7 +12,7 @@ button.addEventListener('click', (e) => {
     output.innerHTML = 'Correct! The number is ' + randomNumber;
   } else if (input.value > 10 || input.value < 0) {
     output.classList.add('alert-danger');
-    output.innerHTML = 'Needs to be a number from 0 - 10'
+    output.innerHTML = 'Needs to be a number from 0 - 10. Try again.'
   }
   
   else {

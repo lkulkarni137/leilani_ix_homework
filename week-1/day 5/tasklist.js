@@ -57,24 +57,39 @@ class UI {
         return tr;
     }
 
-    createCompleteButton() {
+    createCompleteButton(task) {
         const completeButton = document.createElement('radio');
 
         completeButton.setAttribute('class', 'form-check-input');
         completeButton.setAttribute('name', 'flexRadioDefault');
         completeButton.setAttribute('id', 'flexRadioDefault1');
-        completeButton.addEventListener('click', () => {
-            console.log('Complete button was clicked');
-        })
 
         const deleteButton = document.createElement('button');
         deleteButton.setAttribute('class', 'btn-close');
         deleteButton.addEventListener('click', () => {
-            console.log('Delete button was clicked')
+            this.onDeleteTaskClicked(task);
         });
 
         return [completeButton, deleteButton];
 
+    }
+
+    onDeleteButtonClicked(task) {
+        this.saveTasksToLocalStorage();
+        this.renderTaskTable();
+    }
+
+    saveTasksToLocalStorage() {
+        const json = JSON.stringify(this.tasks);
+        localStorage.setItem('tasks', json);
+    }
+
+    loadTasksToLocalStorage() {
+        const json = localStorage.getItem('tasks');
+        if (json) {
+            const taskArr = JSON.parsel(json);
+            this.tasks = taskArr.map((task) => Task.fromJSON(task));
+        }
     }
 }
 
